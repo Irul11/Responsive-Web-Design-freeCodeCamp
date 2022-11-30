@@ -1,0 +1,149 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+header {
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    /*column-gap: 500px;*/
+    align-items: center;
+    background-color: #ffcf33;
+    position: fixed;
+    z-index: 99;
+}
+
+img {
+    width: 30%;
+}
+
+.list-nav{
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#hero {
+    /*margin-top: 150px;*/
+    position: relative;
+    z-index: 12;
+    padding-top: 150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=email] {
+    width: min(200px, 20%);
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    background-color: #ffcf33;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.features {
+    position: relative;
+    margin: 20px 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /*width: 100%;*/
+    background-color: #ffcf33;
+}
+
+#content {
+    /*background-color: #ffcf33;*/
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: 30% 100px 500px 30%;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.content-img {
+    grid-column: 2;
+    grid-row: 1/-1;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content-header {
+    grid-column: 3;
+}
+
+.content-text {
+    grid-column: 3;
+}
+
+#how-it-works {
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+}
+
+iframe {
+    width: 500px;
+    height: 300px;
+    align-items: center;
+}
+
+#pricing {
+    display: flex;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Lato, sans-serif;
+}
+
+.grid2 {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1115px) {
+    header {
+        margin: 20px 15px 20px 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100px;
+        /*column-gap: 500px;*/
+        align-items: center;
+        background-color: #99c9ff;
+        position: fixed;
+        z-index: 99;
+    }
+}
